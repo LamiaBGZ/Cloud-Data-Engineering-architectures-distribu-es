@@ -1,0 +1,39 @@
+# Sources brutes, bases et exports de données
+/landing/
+/source_relationnelle/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+/export*/
+exports/
+data_exports/
+*.csv
+*.parquet
+*.jsonl
+
+# Rapports contenant des exemples issus des données
+/Rendu/QUALITE.md
+/Rendu/resultats_audit.json
+
+# Environnements locaux et secrets
+.env
+.env.*
+.venv/
+.idea/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+secrets/
+.secrets/
+credentials.json
+*service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+id_rsa*
+id_ed25519*
