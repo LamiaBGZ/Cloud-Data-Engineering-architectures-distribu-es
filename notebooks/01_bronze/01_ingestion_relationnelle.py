@@ -153,7 +153,7 @@ for name, exists in pending:
     if exists:
         writer = writer.mode("overwrite").option("replaceWhere", f"snapshot_date = DATE '{snapshot_date}'")
     else:
-        writer = writer.mode("errorifexists")
+        writer = writer.mode("append")
     writer.saveAsTable(table)
 
     if snapshot_content(table, snapshot_date, schema) != expected:
